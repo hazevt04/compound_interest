@@ -2,7 +2,7 @@
 TARGET = compound_interest
 LIBS = -lm
 CC = gcc
-CFLAGS = -g -Wall -DHDEBUG
+CFLAGS = -g -Wall
 
 SRC_DIR = ./
 INC_DIR = ./

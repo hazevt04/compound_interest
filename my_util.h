@@ -34,15 +34,11 @@
 #endif
 
 #ifndef HDEBUG_PRINTF
-#  ifdef HDEBUG
-#     define HDEBUG_PRINTF(fmt, ...) {\
+#  define HDEBUG_PRINTF(fmt, ...) { \
+      if ( debug ) { \
          printf(fmt, ##__VA_ARGS__); \
-      }
-#  else
-#     define HDEBUG_PRINTF(fmt, ...) {\
-         ; \
-      }
-#  endif
+      } \
+}
 #endif
 
 
